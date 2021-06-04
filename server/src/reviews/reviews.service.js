@@ -38,8 +38,9 @@ class ReviewService{
        
       let a = (i/user.length).toFixed(2);
 
-      //await Cafe.findByIdAndUpdate(id, { raitinigs : a });
+      // const b = await Cafe.findByIdAndUpdate(id, { raitinigs : a });
 
+      // return b;
       return Cafe.findByIdAndUpdate(id, { "raitings" : a });;
 
   }

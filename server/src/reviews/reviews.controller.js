@@ -18,7 +18,7 @@ router.post(
     asyncHandler(async (req, res) => {
         const { id } = req.params;
         const result = await reviews.addReview(id, req.user, req.body);
-        const upd = await reviews.UpdReviews(id);
+        const b = await reviews.UpdReviews(id);
         res.json(result);
       })
     );
@@ -48,6 +48,8 @@ router.patch(
   asyncHandler(async (req, res) => {
     const { id } = req.params;
     const result = await reviews.update(id, req.user.userId, req.body);
+    const b = await reviews.UpdReviews(id);
+
     res.json(result);
   })
 );
@@ -57,6 +59,8 @@ router.delete('/:id',
   asyncHandler(async (req, res) => {
     const { id } = req.params;
     const result = await reviews.delete(id, req.user.userId);
+    const b = await reviews.UpdReviews(id);
+
     res.json(result);
   })
 )
