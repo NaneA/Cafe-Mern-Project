@@ -1,5 +1,5 @@
 {
-  "name": "minesweeper-service",
+  "name": "minesweeper-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,16 +9,8 @@
     "prettier": "npx prettier --write .",
     "eslint": "eslint --fix"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/animheryan1/minesweeper-service.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/animheryan1/minesweeper-service/issues"
-  },
-  "homepage": "https://github.com/animheryan1/minesweeper-service#readme",
   "dependencies": {
     "@types/mongoose": "^5.10.5",
     "axios": "^0.21.1",
