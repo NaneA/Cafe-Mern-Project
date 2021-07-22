@@ -1,1 +1,1 @@
-# minesweeper-service
+# cafe-mern-project
